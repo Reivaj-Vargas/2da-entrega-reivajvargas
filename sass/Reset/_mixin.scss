@@ -1,0 +1,10 @@
+@mixin flex-direct-ai ($flex-direct, $alig-i, $justif-cont){
+    display: flex;
+    flex-direction: $flex-direct;
+    align-items: $alig-i;
+    justify-content: $justif-cont;
+}
+
+@mixin centrado {
+    text-align: $centrar;
+}

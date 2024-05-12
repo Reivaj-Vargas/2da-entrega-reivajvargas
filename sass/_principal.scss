@@ -1,13 +1,6 @@
 /* Main*/
-.historia {
-    text-align: center;
-}
-.contacto {
-    text-align: center;
-}
-
-.nosotros {
-    text-align: center;
+.historia .contacto .nosotros {
+    @include centrado;
 }
 
 img {

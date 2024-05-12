@@ -1,7 +1,7 @@
 /* Tipografia General*/
 body {
-    font-family: "Roboto", sans-serif; 
+    font-family: $titulo-principal; 
     font-style: normal; 
-    margin: 0;
-    padding: 0;
+    margin: $margin-reset;
+    padding: $padding-reset;
 }

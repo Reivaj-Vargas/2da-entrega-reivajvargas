@@ -1,11 +1,10 @@
 /*Contacto*/
 .icons{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    margin-bottom: 20px;
+   @include flex-direct-ai (none, none, space-evenly);
+    margin-top: map-get($map: $pixels, $key:20px );
+    margin-bottom: map-get($map: $pixels, $key:20px );
 }
 svg {
-    width: 24px; 
-    height: 24px; 
+    width: map-get($map: $pixels, $key: 24px ); 
+    height:  map-get($map: $pixels, $key: 24px ); 
   }

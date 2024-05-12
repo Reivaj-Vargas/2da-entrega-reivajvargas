@@ -1,49 +1,53 @@
 /* Header */
 .barra {
-    background-image: url(../assets/img/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center; 
+    background: {
+        image: url(../assets/img/banner.jpg);
+        repeat: no-repeat;
+        position: $centrar;
+    }
     max-width: 100%;
-    height: 550px; 
+    height: map-get($map: $pixels, $key: 550px );
     display: block;
-    color: #FFFFFF;
+    color: $blanco;
+
+    &__content {
+        align-items: $centrar;
+        padding: map-get($map: $pixels, $key: 20px);
+
+        & h1 {
+            & .barra__content--logo {
+                margin: $margin-reset;
+            }
+        }
+
+        &--text {
+            margin: $margin-reset;
+            @include flex-direct-ai (none, none, $centrar)
+        }
+
+        &--logo {
+            margin: $margin-reset;
+        }
+    }
 }
 
 span {
     color: #FFFF00;
 }
 
-.barra__content {
-    align-items: center;
-    padding: 20px;
-}
-
-.barra__content h1 .barra__content--logo {
-    margin: 0;
-}
-
-.barra__content--text {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.barra__content--logo {
-    margin: 0;
-}
 
 /* Barra de Navegación */
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: $margin-reset;
+    padding: $padding-reset;
     display: flex;
     font-size: 20px;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: map-get($map: $pixels, $key: 20px );
 }
 
 nav ul li:first-child {
@@ -52,12 +56,12 @@ nav ul li:first-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: $blanco;
 }
 
 /* Header */
 .header-text {
-    text-align: center;
-    font-size: 25px;
+    text-align: $centrar;
+    font-size: map-get($map: $pixels, $key: 25px );
 
 }

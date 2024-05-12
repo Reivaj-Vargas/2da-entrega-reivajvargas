@@ -1,10 +1,9 @@
 /* Footer */
 footer {
-    background-color: #000000;
-    padding: 20px;
-    text-align: center; 
-    color: #FFFFFF;
-    display: flex; 
-    flex-direction: column;
+    background-color: $color-primario;
+    padding: map-get($map: $pixels, $key: 20px );
+    text-align: $centrar; 
+    color: $blanco;
+    @include flex-direct-ai(column, none, none)
 }
 
