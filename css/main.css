@@ -1,17 +1,97 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import "./Reset/variables";
- *   |         ^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass/main.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"./Reset/variables\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/main.scss 3:9  root stylesheet";
+@charset "UTF-8";
+/* Tipografia General*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
+
+/* Header */
+.barra {
+  background-image: url(../assets/img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  display: block;
+  color: #FFFFFF;
+}
+.barra__content {
+  align-items: center;
+}
+.barra__content h1 .barra__content--logo {
+  margin: 0;
+}
+.barra__content--text {
+  margin: 0;
+  display: flex;
+  flex-direction: none;
+  align-items: none;
+  justify-content: center;
+}
+.barra__content--logo {
+  margin: 0;
+}
+
+span {
+  color: #FFFF00;
+}
+
+/* Barra de Navegación */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Header */
+.header-text {
+  text-align: center;
+}
+
+/* Main*/
+.historia .contacto .nosotros {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Aside*/
+ul {
+  list-style-type: none;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+}
+
+/*Contacto*/
+.icons {
+  display: flex;
+  flex-direction: none;
+  align-items: none;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=main.css.map */
