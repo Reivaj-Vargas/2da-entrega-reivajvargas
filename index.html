@@ -16,7 +16,7 @@
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!--Animate-->
-  <linkrel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!--Styles-->
   <link rel="stylesheet" href="./sass/main.css" />
   <!--Title-->
@@ -47,6 +47,9 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
+                <a class="nav-link text-white" href="./html/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link active text-white" aria-current="page" href="./html/contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
@@ -72,92 +75,100 @@
 </header>
 
  <!-- Contenido principal del Blog -->
-<main class="grid-container">
-  <section class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6">
-       
-        <h2 class="animate__animated animate__rotateInUpRight">Nuestro Blog</h2>
-        <article>
-          <div>
-            <picture>
-              <img src="./assets/img/blog1.jpg" alt="imagen-cafe-1" />
-            </picture>
-          </div>
-          <div>
-            <h3>Tipos de Grano de Café</h3>
-            <p>
-              Los granos de café se clasifican principalmente en cuatro tipos: Arábica, Robusta, Liberica y Excelsa. El Arábica, conocido por su sabor suave y ligeramente ácido, es el más popular y representa el 60% de la producción mundial. El Robusta, con un sabor más fuerte y amargo, contiene más cafeína y se utiliza a menudo en mezclas de espresso. La Liberica, menos común, ofrece un perfil de sabor único, afrutado y floral. Por último, el Excelsa, a veces considerado una variedad de la Liberica, aporta notas complejas y ácidas, y se usa para dar profundidad a las mezclas de café. Cada tipo de grano ofrece una experiencia distinta, invitándote a explorar una rica paleta de sabores y aromas.
-            </p>
-            
-          </div>
-        </article>
+ <main class="container mt-5">
+  <div class="row">
+      <!-- Columna del blog -->
+      <div class="col-md-6">
+          <h2 class="animate__animated animate__rotateInUpRight">Nuestro Blog</h2>
+          <div class="row">
+              <!-- Artículo 1 -->
+              <div class="col-md-12">
+                  <article>
+                      <div>
+                          <picture>
+                              <img src="./assets/img/blog1.jpg" alt="imagen-cafe-1" class="img-fluid" />
+                          </picture>
+                      </div>
+                      <div>
+                          <h3>Tipos de Grano de Café</h3>
+                          <p>
+                              Aprende sobre las diferentes variedades de granos de café, desde el popular Arábica hasta el singular Excelsa. Cada tipo de grano ofrece una experiencia única en sabor y aroma, invitándote a descubrir cuál es tu favorito.
+                          </p>
+                          <a href="./html/blog.html" class="btn btn-dark mb-4">Leer más</a>
+                      </div>
+                  </article>
+              </div>
 
-        <article>
-          <div>
-            <picture>
-              <img src="./assets/img/blog2.jpg" alt="imagen-cafe-2" />
-            </picture>
-          </div>
-          <div>
-            <h3>3 Recetas Deliciosas del Café</h3>
-            <p>
-              Descubre tres deliciosas recetas de café que puedes preparar en casa. Primero, el clásico Café Latte: mezcla una parte de café espresso con dos partes de leche al vapor, y añade una capa de espuma de leche para un toque suave y cremoso. Segundo, el Cappuccino: combina una parte de café espresso con una parte de leche al vapor y una parte de espuma de leche, y espolvorea cacao en polvo o canela para un sabor extra. Tercero, el Iced Coffee: prepara café fuerte y enfríalo, luego sírvelo sobre hielo y añade leche o crema al gusto, endulzando con un poco de jarabe de vainilla si lo prefieres. Cada una de estas recetas te permitirá disfrutar del café de una manera nueva y deliciosa.
-            </p>
-            
-          </div>
-        </article>
+              <!-- Artículo 2 -->
+              <div class="col-md-12">
+                  <article>
+                      <div>
+                          <picture>
+                              <img src="./assets/img/blog2.jpg" alt="imagen-cafe-2" class="img-fluid" />
+                          </picture>
+                      </div>
+                      <div>
+                          <h3>3 Recetas Deliciosas del Café</h3>
+                          <p>
+                              Descubre cómo preparar tres deliciosas recetas de café en casa. Desde un clásico Café Latte hasta un refrescante Iced Coffee, disfruta del café de maneras nuevas y emocionantes.
+                          </p>
+                          <a href="./html/blog.html" class="btn btn-dark mb-4">Leer más</a>
+                      </div>
+                  </article>
+              </div>
 
-        <article>
-          <div>
-            <picture>
-              <img src="./assets/img/curso2.jpg" alt="imagen-cafe-3" />
-            </picture>
+              <!-- Artículo 3 -->
+              <div class="col-md-12">
+                  <article>
+                      <div>
+                          <picture>
+                              <img src="./assets/img/curso2.jpg" alt="imagen-cafe-3" class="img-fluid" />
+                          </picture>
+                      </div>
+                      <div>
+                          <h3>Beneficios del Café</h3>
+                          <p>
+                              Descubre los numerosos beneficios del café para tu salud. Desde su capacidad para mejorar la función cognitiva hasta su riqueza en antioxidantes, el café puede ser una parte saludable de tu dieta diaria.
+                          </p>
+                          <a href="./html/blog.html" class="btn btn-dark mb-4">Leer más</a>
+                      </div>
+                  </article>
+              </div>
           </div>
-          <div>
-            <h3>Beneficios del Café</h3>
-            <p>
-              El café no solo es una bebida energizante, sino que también ofrece varios beneficios para la salud. Primero, es una excelente fuente de antioxidantes, que ayudan a combatir los radicales libres y reducir el riesgo de enfermedades crónicas. Segundo, el consumo moderado de café está asociado con una mejora en la función cognitiva y puede disminuir el riesgo de enfermedades neurodegenerativas como el Alzheimer y el Parkinson. Tercero, el café puede mejorar el rendimiento físico al aumentar los niveles de adrenalina y liberar ácidos grasos de los tejidos grasos. Además, algunas investigaciones sugieren que el café puede reducir el riesgo de ciertos tipos de cáncer, como el de hígado y el colorrectal. Disfrutar de una taza de café no solo te despierta, sino que también puede contribuir a tu bienestar general.
-            </p>
-            
-          </div>
-        </article>
       </div>
 
-      <!-- Aside -->
-        <aside class="col-md-6 col-lg-6">
-          <article>
-            <h4 class="animate__animated animate__rotateInUpRight">Nuestros Cursos y Talleres</h4>
-            <ul>
+      <!-- Columna del aside -->
+      <aside class="col-md-6">
+          <h4 class="animate__animated animate__rotateInUpRight">Nuestros Cursos y Talleres</h4>
+          <ul>
               <li>
-                <div class="card">
-                  <img src="./assets/img/curso1.jpg" class="card-img-top" alt="imagen-curso-1">
-                  <div class="card-body">
-                    <h5 class="card-title">Técnicas de Extracción de Café</h5>
-                    <p class="card-text">Precio: Gratis</p>
-                    <p class="card-text">Cupos: 20</p>
-                    <a href="#" class="btn btn-dark">Ver Más</a>
+                  <div class="card">
+                      <img src="./assets/img/curso1.jpg" class="card-img-top" alt="imagen-curso-1">
+                      <div class="card-body">
+                          <h5 class="card-title">Técnicas de Extracción de Café</h5>
+                          <p class="card-text">Precio: Gratis</p>
+                          <p class="card-text">Cupos: 20</p>
+                          <a href="#" class="btn btn-dark">Ver Más</a>
+                      </div>
                   </div>
-                </div>
               </li>
 
               <li>
-                <div class="card mt-5">
-                  <img src="./assets/img/blog3.webp" class="card-img-top" alt="imagen-curso-2">
-                  <div class="card-body">
-                    <h5 class="card-title">Café Filtrados</h5>
-                    <p class="card-text">Precio: Gratis</p>
-                    <p class="card-text">Cupos: 20</p>
-                    <a href="#" class="btn btn-dark">Ver Más</a>
+                  <div class="card mt-5">
+                      <img src="./assets/img/blog3.webp" class="card-img-top" alt="imagen-curso-2">
+                      <div class="card-body">
+                          <h5 class="card-title">Café Filtrados</h5>
+                          <p class="card-text">Precio: Gratis</p>
+                          <p class="card-text">Cupos: 20</p>
+                          <a href="#" class="btn btn-dark">Ver Más</a>
+                      </div>
                   </div>
-                </div>
               </li>
-            </ul>
-          </article>
-        </aside>
-    </div>
-  </section>
+          </ul>
+      </aside>
+  </div>
 </main>
+
 
 <footer class="container-fluid">
   <h5 class="logo">Cafetería <span>Gab</span></h5>
