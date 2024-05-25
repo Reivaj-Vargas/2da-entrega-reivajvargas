@@ -9,35 +9,27 @@
     height: map-get($map: $pixels, $key: 550px );
     display: block;
     color: $blanco;
-
     &__content {
         align-items: $centrar;
         padding: map-get($map: $pixels, $key: 20px);
-
         & h1 {
             & .barra__content--logo {
                 margin: $margin-reset;
             }
         }
-
         &--text {
             margin: $margin-reset;
             @include flex-direct-ai (none, none, $centrar)
         }
-
         &--logo {
             margin: $margin-reset;
         }
     }
 }
-
 span {
     color: #FFFF00;
 }
-
-
 /* Barra de Navegación */
-
 nav ul {
     list-style-type: none;
     margin: $margin-reset;
@@ -45,23 +37,18 @@ nav ul {
     display: flex;
     font-size: 20px;
 }
-
 nav ul li {
     margin-left: map-get($map: $pixels, $key: 20px );
 }
-
 nav ul li:first-child {
     margin-left: 0;
 }
-
 nav ul li a {
     text-decoration: none;
     color: $blanco;
 }
-
 /* Header */
 .header-text {
     text-align: $centrar;
     font-size: map-get($map: $pixels, $key: 25px );
-
 }

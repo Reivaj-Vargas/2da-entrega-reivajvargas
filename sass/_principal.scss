@@ -2,17 +2,14 @@
 .historia .contacto .nosotros {
     @include centrado;
 }
-
 img {
     width: 100%;
     height: 100%;
 }
-
 /*Aside*/
 ul {
     list-style-type: none;
   }
-
   .no-border {
     border: none !important;
   }
